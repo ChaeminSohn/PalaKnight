@@ -24,11 +24,11 @@ public class PlayerMove : MonoBehaviour
     {
         if (playerInput.Move > 0)
         {
-            transform.localEulerAngles = new Vector3(0, 0, 0);
+            transform.localScale = new Vector3(1, 1, 1);
         }
         else if (playerInput.Move < 0)
         {
-            transform.localEulerAngles = new Vector3(0, 180, 0);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
         else
         {
@@ -41,4 +41,5 @@ public class PlayerMove : MonoBehaviour
         playerAnimator.SetBool("1_Move", true);
 
     }
+
 }

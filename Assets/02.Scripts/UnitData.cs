@@ -7,4 +7,6 @@ public class UnitData : ScriptableObject
     public float hp;
     public float range;
     public float speed;
+
+    public float attackSpeed;
 }
